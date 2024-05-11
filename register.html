@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="log-style.css">
+    <title>Cadastrar</title>
+</head>
+<body>
+    <section>
+        <h1>Criar Conta</h1>
+        <div class="input-box">
+            <img src="imgs/person_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="name" class="input-img">
+            <input type="text" name="name" id="input-name" class="ipt" placeholder="Nome">
+        </div>
+        <div class="input-box">
+            <img src="imgs/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="name" class="input-img">
+           <input type="email" name="email" id="input-email" class="ipt" placeholder="Email">           
+        </div>
+        <div class="input-box">
+            <img src="imgs/lock_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="name" class="input-img">
+            <input type="password" name="email" id="input-password" class="ipt" placeholder="Senha">            
+        </div>
+        <div class="input-box">
+            <img src="imgs/lock_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="name" class="input-img">
+            <input type="password" name="confirm" id="input-confirm" class="ipt" placeholder="Confirmar senha">
+        </div>
+        <p id="alert-confirm"></p>       
+        <input type="button" value="Confirmar" class="btn" onclick="registerUser()">
+        <div class="terms">
+            <p>Ao criar uma conta, você concorda com as <a href="">Condições de Uso da 404Shoes</a>. Por favor verifique a Notificação de Privacidade, Notificação de Cookies e a Notificação de Anúncios Baseados em Interesse.</p>
+        </div>
+    </section>
+    <script src="register.js"></script>
+</body>
+</html>
