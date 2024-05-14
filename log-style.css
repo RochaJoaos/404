@@ -79,7 +79,74 @@ h1{
     width: 90%;
 }
 
+.log-box{
+    margin-top: 15px;
+}
+
+#alter-box{
+    margin: auto;
+    width: 85%;
+    text-align: left;
+}
+
+.alter-password{
+    text-decoration: none;
+    color: var(--color-01); 
+}
+
+.register-btn{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-01);
+    font-weight: 600;
+}
+
 p{
     font-size: 12px;
     
+}
+
+@media all and (max-width: 440px){
+    
+section{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+h1{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.ipt{
+    width: 75%;
+    padding: 5px 5px 5px 35px;
+    margin: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.input-img{
+    width: 20px;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+.btn{
+    width: 90%;
+    padding: 8px;
+    margin: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+
+p{
+    font-size: 9px;
+    
+}
+
 }
