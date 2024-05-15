@@ -5,6 +5,7 @@
     --color-01: #3D5885;
     --color-02: #84A1F0;
     --color-03: #FFF;
+    --alert-color: #a11414;
 }
 
 *{
@@ -14,7 +15,12 @@
 }
 
 body{
-    background-color: var(--color-01);
+    width: 100%;
+    background-image: url(imgs/bg.PNG);
+    background-repeat:no-repeat;
+    background-size: 1380px;
+    background-position:center top;
+    
 }
 
 section{
@@ -52,13 +58,19 @@ h1{
     padding: 8px 8px 8px 35px;
     margin: 8px;
     font-size: 16px;
-    border: 2px solid var(--color-01);
+    border: 1px solid var(--color-01);
     border-radius: 15px;
 }
 
 .ipt::placeholder{
     color: black;
     font-weight: 600;
+}
+
+.alert-input{
+    margin: 0px 25px;
+    text-align: left;
+    color: var(--alert-color);
 }
 
 .btn{
@@ -104,6 +116,11 @@ h1{
 p{
     font-size: 12px;
     
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-02);
 }
 
 @media all and (max-width: 440px){
