@@ -1,0 +1,43 @@
+/*  Fonte: Inter  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-01: #3D5885;
+    --color-02: #84A1F0;
+    --color-03: #FFF;
+    --alert-color: #a11414;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    padding: 20px 50px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 90px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+#close{
+    width: 35px;
+}
+
+.back{
+    font-size: 18px;
+    color: var(--alert-color);
+    text-decoration: none;
+}
