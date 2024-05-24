@@ -18,39 +18,57 @@
             <a href=""  class="back">Cancelar compra</a>
         </nav>
     </header>
+    <section id="alert">
+        <div id="alert-box">
+
+        </div>
+    </section>
     <main>
         <section class="input-info">
             <div class="info-box" id="address">
-                <div class="top-box">
+                <div class="top-box" onclick="hideShowAddress()">
                     <h1>Endereço de Entrega</h1>
-                    <img src="imgs/arrow.svg" alt="arrow" class="arrow">
+                    <img src="imgs/arrow.svg" alt="arrow" class="arrow" id="arrow-address">
                 </div>
-                <div class="body-box">
+                <div class="body-box" id="body-address">
                     <hr>
-                    <div class="ad">
-                        <div class="search-area">
+                    <div class="input-group">
+                        <div class="input-line">
                             <input class="address-inp" type="text" name="name" id="name" placeholder="Nome">
-                            <input class="address-inp" type="text" name="cep" id="cep" class="cep-inp" placeholder="CEP">
-                            <img src="imgs/search.svg" alt="search" id="search">
+                            <div class="search-area">
+                                <input class="address-inp" type="number" name="cep" id="cep" class="cep-inp" placeholder="CEP">
+                                <img src="imgs/search.svg" alt="search" id="search" onclick="searchCEP()">
+                            </div>
                         </div>
-                        <input class="address-inp" type="text" name="state" id="state" placeholder="Estado">
-                        <input class="address-inp" type="text" name="city" id="city" placeholder="Cidade">
-                        <input class="address-inp" type="text" name="distric" id="distric" placeholder="Bairro">
-                        <input class="address-inp" type="text" name="street" id="street" placeholder="Rua">
-                        <input class="address-inp" type="number" name="n" id="n" placeholder="Nº">
-                        <input class="address-inp" type="text" name="complement" id="complement" placeholder="Complemento">
+                        <div class="input-line">
+                            <input class="address-inp" type="text" name="state" id="state" placeholder="Estado">
+                            <input class="address-inp" type="text" name="city" id="city" placeholder="Cidade">
+                        </div>
+                        <div class="input-line">
+                            <input class="address-inp" type="text" name="district" id="district" placeholder="Bairro">
+                            <input class="address-inp" type="text" name="street" id="street" placeholder="Rua">
+                        </div>
+                        <div class="input-line">
+                            <input class="address-inp" type="number" name="n" id="n" placeholder="Nº">
+                            <input class="address-inp" type="text" name="complement" id="complement" placeholder="Complemento">
+                        </div>
                     </div>
-                    <input type="button" value="Confirmar Endereço" class="btn">
+                    <input type="button" value="Confirmar Endereço" class="btn" onclick="showAddress()">
                 </div>
             </div>
             <div class="info-box" id="payment">
-                <div class="top-box">
+                <div class="top-box" onclick="hideShowPayment()">
                     <h1>Forma de Pagamento</h1>
-                    <img src="imgs/arrow.svg" alt="arrow" class="arrow">
+                    <img src="imgs/arrow.svg" alt="arrow" class="arrow" id="arrow-pay">
                 </div>
-                <div class="body-box">
+                <div class="body-box" id="body-pay">
                     <hr>
-                 
+                    <div class="option-pay">
+                        <input type="button" class="btn-pay" value="Débito">
+                        <input type="button" class="btn-pay" value="Crédito">
+                        <input type="button" class="btn-pay" value="Pix">
+                        <input type="button" class="btn-pay" value="Boleto">
+                    </div>
                 </div>
             </div>
         </section>
@@ -59,11 +77,11 @@
                 <h1>Resumo do pedido</h1>
                 <div class="checkout-info">
                     <p>CEP:</p>
-                    <p>XXXXX-XXX</p>
+                    <p id="p-cep">---</p>
                 </div>
                 <div class="checkout-info">
                     <p>Entrega:</p>
-                    <p>---</p>
+                    <p id="p-price">---</p>
                 </div>
                 <hr>
                 <div class="checkout-info">
@@ -83,5 +101,8 @@
             </div>
         </section>
     </main>
+    <script src="hideShow.js"></script>
+    <script src="searchCEP.js"></script>
+    <script src="showAddressInformationInCheckout.js"></script>
 </body>
 </html>
