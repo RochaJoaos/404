@@ -90,10 +90,6 @@ main{
     justify-content: space-between;
 }
 
-.body-box{
-
-}
-
 .input-group{
     text-align: center;
     width: 100%;
@@ -102,6 +98,7 @@ main{
 .input-line{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .check{
@@ -185,6 +182,7 @@ hr{
 }
 
 .option-pay{
+    padding-bottom: 20px;
     text-align: center;
     align-items: center;
 }
@@ -196,4 +194,65 @@ hr{
     background-color: transparent;
     color: var(--color-01);
     font-size: 18px;
+}
+
+h2{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.payment-methods{
+    display: flex;
+}
+
+.help{
+    width: 50%;
+    text-align: center;
+}
+
+.card-input{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid var(--color-01);
+    border-radius: 8px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.card-input::placeholder{
+    color: var(--color-01);
+}
+
+#card-name, #card-number{
+    width: 100%;
+}
+
+#card-date{
+    width: 70px;
+}
+
+#card-code{
+    width: 55px;
+}
+
+.option-method{
+    text-align: initial;
+    width: 50%;
+    text-align: center;
+}
+
+#save-card-cehckbox{
+    width: 12px;
+    margin-right: 10px;
+    border: 1px solid var(--color-01);
+}
+
+#save-card{
+    padding: 10px 0px;
+    justify-content: center;
+    font-size: 12px;
+}
+
+#card-img{
+    width: 70%;
 }
