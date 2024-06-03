@@ -64,10 +64,10 @@
                 <div class="body-box" id="body-pay">
                     <hr>
                     <div class="option-pay">
-                        <input type="button" class="btn-pay" value="Débito">
-                        <input type="button" class="btn-pay" value="Crédito">
-                        <input type="button" class="btn-pay" value="Pix">
-                        <input type="button" class="btn-pay" value="Boleto">
+                        <input type="button" class="btn-pay" id="debit-btn" value="Débito" onclick="debit()">
+                        <input type="button" class="btn-pay" id="credit-btn" value="Crédito">
+                        <input type="button" class="btn-pay" id="pix-btn" value="Pix">
+                        <input type="button" class="btn-pay" id="boleto-btn" value="Boleto">
                     </div>
                     <div class="form-pay" id="credit-box">
                         <div class="payment-methods">
@@ -91,18 +91,28 @@
                         </div>
                         <input type="button" value="Adicionar" class="btn">
                     </div>
-                    <div class="form-pay" id="credit-box">
-
+                    <div class="form-pay" id="debit-box">
+                        <div class="payment-methods">
+                            <form id="credit" class="option-method">
+                                <h2 id="title-methods">Dados do Cartão</h2>
+                                <div class="input-line">
+                                    <input type="text" name="name" class="card-input" id="card-name" placeholder="Nome no Cartão">
+                                </div>
+                                <div class="input-line">
+                                    <input type="number" name="number" id="card-number" class="card-input" placeholder="Número do Cartão">
+                                </div>
+                                <div class="input-line">
+                                    <input type="text" name="date" id="card-date" class="card-input" placeholder="mm/aa">
+                                    <input type="number" name="code" id="card-code" class="card-input " placeholder="CVV">
+                                </div>
+                            </form>
+                            <div class="help">
+                                <h2>Onde Encontrar?</h2>
+                                <img src="imgs/card.PNG" id="card-img" alt="card">
+                            </div>
+                        </div>
+                        <input type="button" value="Adicionar" class="btn">
                     </div>
-                    <form id="debit" class="option-method">
-
-                    </form>
-                    <form id="pix" class="option-method">
-
-                    </form>
-                    <form id="boleto" class="option-method">
-
-                    </form>
                 </div>
             </div>
         </section>
@@ -138,5 +148,6 @@
     <script src="hideShow.js"></script>
     <script src="searchCEP.js"></script>
     <script src="showAddressInformationInCheckout.js"></script>
+    <script src="paymentMethods.js"></script>
 </body>
 </html>

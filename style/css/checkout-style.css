@@ -18,6 +18,10 @@ body{
     padding: 0px 30px;
 }
 
+/*  
+    Cabeçalho - LOGO e Cancelar  
+*/
+
 header{
     padding: 15px;
     display: flex;
@@ -25,13 +29,13 @@ header{
     justify-content: space-between;
 }
 
-.logo{
-    width: 80px;
-}
-
 nav{
     display: flex;
     align-items: center;
+}
+
+.logo{
+    width: 80px;
 }
 
 #close{
@@ -43,6 +47,7 @@ nav{
     color: var(--alert-color);
     text-decoration: none;
 }
+
 /*
 #alert{
 
@@ -71,6 +76,10 @@ main{
     display: flex;
     justify-content: space-between;
 }
+
+/*
+    Inserir Endereço
+*/
 
 .input-info{
     width: 60%;
@@ -189,11 +198,17 @@ hr{
 
 .btn-pay{
     cursor: pointer;
-    margin: 5px;
-    border: none;
+    width: 80px;
+    padding: 5px;
+    margin: 3px;
     background-color: transparent;
+    border:  2px solid transparent;
     color: var(--color-01);
     font-size: 18px;
+}
+
+.btn-pay:hover{
+    border-bottom: 2px solid var(--color-02);
 }
 
 h2{
