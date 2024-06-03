@@ -256,3 +256,21 @@ h2{
 #card-img{
     width: 70%;
 }
+
+@media all and (max-width: 900px){
+    main{
+        display: block;
+    } 
+    
+    .input-info{
+        width: 100%;
+    }
+    
+    .check{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 500px){
+
+}
