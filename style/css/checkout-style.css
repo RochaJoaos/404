@@ -77,6 +77,21 @@ main{
     justify-content: space-between;
 }
 
+.arrow{
+    transform: rotate(90deg);
+}
+
+.top-box{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+hr{
+    margin: 20px 0px;
+    background-color: var(--color-01);
+}
+
 /*
     Inserir Endereço
 */
@@ -93,12 +108,6 @@ main{
     color: var(--color-01);
 }
 
-.top-box{
-    display: flex;
-    cursor: pointer;
-    justify-content: space-between;
-}
-
 .input-group{
     text-align: center;
     width: 100%;
@@ -108,41 +117,6 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-
-.check{
-    width: 40%;   
-}
-
-.checkout-info{
-    display: flex;
-    justify-content: space-between;
-}
-
-p{
-    font-size: 18px;
-}
-
-hr{
-    margin: 20px 0px;
-    background-color: var(--color-01);
-}
-
-.arrow{
-    transform: rotate(90deg);
-}
-
-.btn{
-    cursor: pointer;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 18px;
-    background-color: var(--color-01);
-    border: none;
-    border-radius: 10px;
-    color: var(--color-03);
-    font-weight: 500;
 }
 
 .address-inp{
@@ -188,6 +162,23 @@ hr{
     padding: 3px;
     border-radius: 8px;
     background-color: var(--color-01);
+}
+
+/*
+    Inserir Metodo de pagamento
+*/
+
+.btn{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: var(--color-01);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-03);
+    font-weight: 500;
 }
 
 .option-pay{
@@ -256,21 +247,28 @@ h2{
     text-align: center;
 }
 
-#save-card-cehckbox{
-    width: 12px;
-    margin-right: 10px;
-    border: 1px solid var(--color-01);
-}
-
-#save-card{
-    padding: 10px 0px;
-    justify-content: center;
-    font-size: 12px;
-}
-
 #card-img{
     width: 70%;
 }
+
+/*
+    Resumo do pedido
+*/
+
+
+.check{
+    width: 40%;   
+}
+
+.checkout-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    font-size: 18px;
+}
+
 
 @media all and (max-width: 900px){
     main{

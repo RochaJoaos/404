@@ -24,6 +24,7 @@
         </div>
     </section>
     <main>
+        <!--  Informar endereço  -->
         <section class="input-info">
             <div class="info-box" id="address">
                 <div class="top-box" onclick="hideShowAddress()">
@@ -56,6 +57,7 @@
                     <input type="button" value="Confirmar Endereço" class="btn" onclick="showAddress()">
                 </div>
             </div>
+            <!--  Informar Metodo de pagamento  -->
             <div class="info-box" id="payment">
                 <div class="top-box" onclick="hideShowPayment()">
                     <h1>Forma de Pagamento</h1>
@@ -69,6 +71,9 @@
                         <input type="button" class="btn-pay" id="pix-btn" value="Pix">
                         <input type="button" class="btn-pay" id="boleto-btn" value="Boleto">
                     </div>
+
+                    <!--  Crédito  -->
+
                     <div class="form-pay" id="credit-box">
                         <div class="payment-methods">
                             <form id="credit" class="option-method">
@@ -91,6 +96,9 @@
                         </div>
                         <input type="button" value="Adicionar" class="btn">
                     </div>
+
+                    <!--  Débito  -->
+
                     <div class="form-pay" id="debit-box">
                         <div class="payment-methods">
                             <form id="credit" class="option-method">
@@ -113,10 +121,18 @@
                         </div>
                         <input type="button" value="Adicionar" class="btn">
                     </div>
+
+                    <!-- Pix -->
+
+                    <div  class="form-pay" id="pix-box">
+
+                    </div>
+
                 </div>
             </div>
         </section>
         <section class="check">
+        <!--  Resumo do Pedido  -->
             <div class="info-box">
                 <h1>Resumo do pedido</h1>
                 <div class="checkout-info">
