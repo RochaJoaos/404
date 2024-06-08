@@ -73,5 +73,6 @@ h2{
 
 #alert-email{
     color: var(--alert-color);
+    font-size: 13px;
 }
 
