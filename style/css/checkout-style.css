@@ -168,6 +168,10 @@ hr{
     Inserir Metodo de pagamento
 */
 
+#debit-box, #pix-box, #boleto-box{
+    display: none;
+}
+
 .btn{
     cursor: pointer;
     width: 100%;
@@ -179,6 +183,12 @@ hr{
     border-radius: 10px;
     color: var(--color-03);
     font-weight: 500;
+}
+
+.btn-alt{
+    background-color: transparent;
+    border: 1px solid var(--color-01);
+    color: var(--color-01);
 }
 
 .option-pay{
@@ -249,6 +259,25 @@ h2{
 
 #card-img{
     width: 70%;
+}
+
+.code-txt{
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid var(--color-01);
+    border-radius: 10px;
+}
+
+#qrcode{
+    width: 50%;
+}
+
+.boleto{
+    display: block;
+    margin: auto;
+    width: 60%;
+    text-align: center;
 }
 
 /*
