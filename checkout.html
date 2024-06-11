@@ -79,14 +79,14 @@
                             <form id="credit" class="option-method">
                                 <h2 id="title-methods">Dados do Cartão</h2>
                                 <div class="input-line">
-                                    <input type="text" name="name" class="card-input" id="card-name" placeholder="Nome no Cartão">
+                                    <input type="text" name="name" class="card-input card-name" id="card-name-credit" placeholder="Nome no Cartão">
                                 </div>
                                 <div class="input-line">
-                                    <input type="number" name="number" id="card-number" class="card-input" placeholder="Número do Cartão">
+                                    <input type="number" name="number" id="card-number-credit" class="card-input card-number" placeholder="Número do Cartão">
                                 </div>
                                 <div class="input-line">
-                                    <input type="text" name="date" id="card-date" class="card-input" placeholder="mm/aa">
-                                    <input type="number" name="code" id="card-code" class="card-input " placeholder="CVV">
+                                    <input type="text" name="date" id="card-date-credit" class="card-input card-date" placeholder="mm/aa">
+                                    <input type="number" name="code" id="card-code-credit" class="card-input card-code" placeholder="CVV">
                                 </div>
                             </form>
                             <div class="help">
@@ -94,7 +94,7 @@
                                 <img src="imgs/card.PNG" id="card-img" alt="card">
                             </div>
                         </div>
-                        <input type="button" value="Adicionar" class="btn">
+                        <input type="button" value="Adicionar" class="btn" onclick="showPayment()">
                     </div>
 
                     <!--  Débito  -->
@@ -103,14 +103,14 @@
                             <form id="credit" class="option-method">
                                 <h2 id="title-methods">Dados do Cartão</h2>
                                 <div class="input-line">
-                                    <input type="text" name="name" class="card-input" id="card-name" placeholder="Nome no Cartão">
+                                    <input type="text" name="name" class="card-input card-name" id="card-name-debit" placeholder="Nome no Cartão">
                                 </div>
                                 <div class="input-line">
-                                    <input type="number" name="number" id="card-number" class="card-input" placeholder="Número do Cartão">
+                                    <input type="number" name="number" id="card-number-debit" class="card-input card-number" placeholder="Número do Cartão">
                                 </div>
                                 <div class="input-line">
-                                    <input type="text" name="date" id="card-date" class="card-input" placeholder="mm/aa">
-                                    <input type="number" name="code" id="card-code" class="card-input " placeholder="CVV">
+                                    <input type="text" name="date" id="card-date-debit" class="card-input card-date" placeholder="mm/aa">
+                                    <input type="number" name="code" id="card-code-debit" class="card-input card-code" placeholder="CVV">
                                 </div>
                             </form>
                             <div class="help">
@@ -118,7 +118,7 @@
                                 <img src="imgs/card.PNG" id="card-img" alt="card">
                             </div>
                         </div>
-                        <input type="button" value="Adicionar" class="btn">
+                        <input type="button" value="Adicionar" class="btn" onclick="showPayment()">
                     </div>
 
                     <!-- Pix -->
@@ -185,9 +185,9 @@
             </div>
         </section>
     </main>
-    <script src="hideShow.js"></script>
-    <script src="searchCEP.js"></script>
-    <script src="showAddressInformationInCheckout.js"></script>
-    <script src="paymentMethods.js"></script>
+    <script src="script/hideShow.js"></script>
+    <script src="script/searchCEP.js"></script>
+    <script src="script/verifyInformation.js"></script>
+    <script src="script/paymentMethods.js"></script>
 </body>
 </html>
