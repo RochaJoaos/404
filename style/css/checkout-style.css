@@ -92,6 +92,10 @@ hr{
     background-color: var(--color-01);
 }
 
+.body-box{
+    display: none;
+}
+
 /*
     Inserir Endereço
 */
@@ -208,8 +212,9 @@ hr{
     font-size: 18px;
 }
 
-.btn-pay:hover{
-    border-bottom: 2px solid var(--color-02);
+
+#credit-btn{
+    border-bottom: 2px solid var(--color-01);    
 }
 
 h2{
