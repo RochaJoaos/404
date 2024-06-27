@@ -11,6 +11,7 @@ function showAddress(){
         document.getElementById("p-price").innerHTML = "R$ 13,09"
         document.getElementById("body-address").style.display = "none"
         document.getElementById("address").style.border = "2px solid green"
+        document.getElementById("p-total").innerHTML = "R$ 13,09"
         document.getElementById("address").style.color = "green"
         document.querySelector("#arrow-address").setAttribute("src", "imgs/check.svg")
         document.getElementById("arrow-address").style.transform = "rotate(0deg)"
