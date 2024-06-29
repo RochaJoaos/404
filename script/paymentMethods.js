@@ -8,10 +8,13 @@ const creditBox = document.getElementById("credit-box")
 const pixBox = document.getElementById("pix-box")
 const boletoBox = document.getElementById("boleto-box")
 
-
+const pItem = document.getElementById("p-item").value
+const pPayment = document.getElementById("p-payment").value
 
 
 function debit(){
+    pItem
+
     debitButton.style.borderBottom = "2px solid var(--color-01)"
     creditButton.style.borderBottom = "transparent"
     pixButton.style.borderBottom = "transparent"
