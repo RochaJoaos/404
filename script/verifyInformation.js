@@ -79,36 +79,47 @@ function showPayment(){
             const cardDate = document.getElementById("card-date-debit")
             const cardCode = document.getElementById("card-code-debit")
 
-            // FULLNAME - Validação do Campo
-            if(cardFullname.value != true){
-                cardFullname.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardFullname.value != false){
-                cardFullname.style.border = "1px solid var(--color-01)" 
-            }
-    
-            // NUMBER - Validação do Campo    
-            if(cardNumber.value != true){
-                cardNumber.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardNumber.value != false){
-                cardNumber.style.border = "1px solid var(--color-01)"   
-            }
-    
-            // DATE - Validação do Campo 
-            if(cardDate.value != true){
-                cardDate.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardDate.value != false){
-                cardDate.style.border = "1px solid var(--color-01)"   
-            }
-    
-            // CODE - Validação do Campo 
-            if(cardCode.value != true){
-                cardCode.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardCode.value != false){
-                cardCode.style.border = "1px solid var(--color-01)"
+            if(cardFullname.value != false && cardNumber.value != false && cardDate.value != false && cardCode.value != false){
+                document.getElementById("body-pay").style.display = "none"
+                document.getElementById("payment").style.border = "2px solid green"
+                document.getElementById("payment").style.color = "green"
+                document.querySelector("#arrow-pay").setAttribute("src", "imgs/check.svg")
+                document.getElementById("arrow-pay").style.transform = "rotate(0deg)" 
+                document.getElementById("p-item").innerHTML = "R$699,90"
+                document.getElementById("p-payment").innerHTML = "débito"
+                document.getElementById("p-total").innerHTML = "R$713,08"                            
+            } else{
+                // FULLNAME - Validação do Campo
+                if(cardFullname.value != true){
+                    cardFullname.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardFullname.value != false){
+                    cardFullname.style.border = "1px solid var(--color-01)" 
+                }
+        
+                // NUMBER - Validação do Campo    
+                if(cardNumber.value != true){
+                    cardNumber.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardNumber.value != false){
+                    cardNumber.style.border = "1px solid var(--color-01)"   
+                }
+        
+                // DATE - Validação do Campo 
+                if(cardDate.value != true){
+                    cardDate.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardDate.value != false){
+                    cardDate.style.border = "1px solid var(--color-01)"   
+                }
+        
+                // CODE - Validação do Campo 
+                if(cardCode.value != true){
+                    cardCode.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardCode.value != false){
+                    cardCode.style.border = "1px solid var(--color-01)"
+                }
             }
         }
 
@@ -118,43 +129,59 @@ function showPayment(){
             const cardDate = document.getElementById("card-date-credit")
             const cardCode = document.getElementById("card-code-credit")
 
-            // FULLNAME - Validação do Campo
-            if(cardFullname.value != true){
-                cardFullname.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardFullname.value != false){
-                cardFullname.style.border = "1px solid var(--color-01)" 
-            }
-    
-            // NUMBER - Validação do Campo    
-            if(cardNumber.value != true){
-                cardNumber.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardNumber.value != false){
-                cardNumber.style.border = "1px solid var(--color-01)"   
-            }
-    
-            // DATE - Validação do Campo 
-            if(cardDate.value != true){
-                cardDate.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardDate.value != false){
-                cardDate.style.border = "1px solid var(--color-01)"   
-            }
-    
-            // CODE - Validação do Campo 
-            if(cardCode.value != true){
-                cardCode.style.border = "1px solid var(--alert-color)"      
-            }
-            if(cardCode.value != false){
-                cardCode.style.border = "1px solid var(--color-01)"
-            }
-            document.getElementById("body-pay").style.display = "none"
-            document.getElementById("payment").style.border = "2px solid green"
-            document.getElementById("payment").style.color = "green"
-            document.querySelector("#arrow-pay").setAttribute("src", "imgs/check.svg")
-            document.getElementById("arrow-pay").style.transform = "rotate(0deg)"
-        }
+            if(cardFullname.value != false && cardNumber.value != false && cardDate.value != false && cardCode.value != false){
+                document.getElementById("body-pay").style.display = "none"
+                document.getElementById("payment").style.border = "2px solid green"
+                document.getElementById("payment").style.color = "green"
+                document.querySelector("#arrow-pay").setAttribute("src", "imgs/check.svg")
+                document.getElementById("arrow-pay").style.transform = "rotate(0deg)"
+                document.getElementById("p-item").innerHTML = "R$699,90"
+                document.getElementById("p-payment").innerHTML = "credito"
+                document.getElementById("p-total").innerHTML = "R$713,08"                                
+            } else{
 
-    
+                // FULLNAME - Validação do Campo
+                if(cardFullname.value != true){
+                    cardFullname.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardFullname.value != false){
+                    cardFullname.style.border = "1px solid var(--color-01)" 
+                }
+        
+                // NUMBER - Validação do Campo    
+                if(cardNumber.value != true){
+                    cardNumber.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardNumber.value != false){
+                    cardNumber.style.border = "1px solid var(--color-01)"   
+                }
+        
+                // DATE - Validação do Campo 
+                if(cardDate.value != true){
+                    cardDate.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardDate.value != false){
+                    cardDate.style.border = "1px solid var(--color-01)"   
+                }
+        
+                // CODE - Validação do Campo 
+                if(cardCode.value != true){
+                    cardCode.style.border = "1px solid var(--alert-color)"      
+                }
+                if(cardCode.value != false){
+                    cardCode.style.border = "1px solid var(--color-01)"
+                }
+            }
+        }
+}
+
+function validation(){
+   const pCEP = document.getElementById("p-cep").textContent
+   const pPrice = document.getElementById("p-price").textContent
+   const pItem = document.getElementById("p-item").textContent
+   const pPayment = document.getElementById("p-payment").textContent
+   const pTotal = document.getElementById("p-total").textContent
+   if(pCEP != "---" && pPrice != "---" && pItem != "---" && pPayment != "---" && pTotal != "---"){
+        open("../login.html")
+   }
 }
